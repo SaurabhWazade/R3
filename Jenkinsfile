@@ -9,6 +9,7 @@ pipeline {
 steps {
   sh """sudo yum install httpd -y
   sudo systemctl start httpd
+  sudo git clone 
   sudo rm -rf /var/www/html/*
   sudo cp /mnt/jenkins-slave/workspace/slave/R3/index.html /var/www/html/
   cd
