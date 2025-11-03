@@ -3,7 +3,7 @@ pipeline {
     label {
       label "QA"
     }
-
+  }
   stages {
     stage ('one') {
 steps {
@@ -18,6 +18,5 @@ steps {
 }
       
     }
-  }
   }
 }
