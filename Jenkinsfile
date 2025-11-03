@@ -11,7 +11,7 @@ steps {
   sudo systemctl start httpd
   sudo git clone https://github.com/SaurabhWazade/R3.git
   sudo rm -rf /var/www/html/*
-  sudo cp /root/.jenkins/workspace/'test 2'/R3/index.html /var/www/html/
+  sudo /mnt/jenkins-slave/workspace/slave/R3/index.html /var/www/html/
   cd
   sudo chmod -R 777 /var/www/html/
   sudo systemctl restart httpd"""
